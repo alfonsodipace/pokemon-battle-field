@@ -1,0 +1,15 @@
+version: "3.8"
+services:
+  db:
+    container_name: mongo
+    restart: always
+    env_file:
+      - ./database/.env
+    ports:
+      - "27017:27017"
+    build: ./database
+  app:
+    container_name: app
+    stdin_open: true # docker run -i
+    tty: true # docker run -t
+    build: ./
