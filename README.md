@@ -17,7 +17,7 @@ A Pokemon has the following attributes:
 - Moves: Defines the moves that a Pokémon can use in a battle.
 
 To determine the winner of a battle between two Pokémon, we will consider various attributes and fields from the PokeAPI.
-To calculate the damage inflicted by a Pokémon's attack, we will use the following formula:
+To calculate the damage inflicted by a Pokémon's attack, we will use the following formula (similar to the one used in the Pokémon games from Bulbapedia (https://bulbapedia.bulbagarden.net/wiki/Damage)):
 
 ```
 Damage = ((((((2 * self.level * critical_hit)/5) + 2) * (self.attack / rival.defense) * move.power) / 50) + 2) * stab !
