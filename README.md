@@ -20,8 +20,10 @@ To determine the winner of a battle between two Pokémon, we will consider vario
 To calculate the damage inflicted by a Pokémon's attack, we will use the following formula:
 
 ```
-Damage = ((((((2 * self.level * critical_hit)/5) + 2) * (self.attack / rival.defense) * move.power) / 50) + 2) * stab
+Damage = ((((((2 * self.level * critical_hit)/5) + 2) * (self.attack / rival.defense) * move.power) / 50) + 2) * stab !
 ```
+
+![damage formula](/docs/formula.png)
 
 Where:
 
@@ -34,6 +36,15 @@ Where:
 
 The Pokémon with the highest damage inflicted wins the battle.
 At the end of the battle, the program will print the winner and the loser, and the battle log will be saved in a MongoDB database.
+
+## Battle
+
+The battle will begin asking the user for the names of the two Pokemons.
+The program will then fetch the data of the two Pokemons from the PokeAPI, and create two Pokemon objects.
+The program will print the details of the two Pokemons.
+The program will then create a Battle object, which will simulate the battle between the two Pokemons.
+The Battle object will then print the winner and the loser, and save the battle log in a MongoDB database.
+The rogramm will ask the user if they want to battle again, and if they do, the program will repeat the process.
 
 ## Implementation
 
