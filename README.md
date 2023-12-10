@@ -23,7 +23,7 @@ To calculate the damage inflicted by a Pokémon's attack, we will use the follow
 Damage = ((((((2 * self.level * critical_hit)/5) + 2) * (self.attack / rival.defense) * move.power) / 50) + 2) * stab !
 ```
 
-![damage formula](/docs/formula.png)
+![damage formula](/docs/formula1.png)
 
 Where:
 
