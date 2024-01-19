@@ -18,6 +18,10 @@ def get_input_pokemon(level, pokemon_number):
     while True:
         try:
             inp = input('Enter the name of pokemon {0}: '.format(pokemon_number))
+            if inp == '' or inp.isspace():
+                logging.error('Pokemon name cannot be empty')
+                continue
+            inp = inp.lower()
             pokemon = generate_pokemon(inp, level)
             logging.info("Pokemon{0}: {1}\n".format(pokemon_number, pokemon))
         # in case the pokemon is not found

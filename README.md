@@ -44,7 +44,7 @@ The program will then fetch the data of the two Pokemons from the PokeAPI, and c
 The program will print the details of the two Pokemons.
 The program will then create a Battle object, which will simulate the battle between the two Pokemons.
 The Battle object will then print the winner and the loser, and save the battle log in a MongoDB database.
-The rogramm will ask the user if they want to battle again, and if they do, the program will repeat the process.
+The programm will ask the user if they want to battle again, and if they do, the program will repeat the process.
 
 ## Implementation
 
